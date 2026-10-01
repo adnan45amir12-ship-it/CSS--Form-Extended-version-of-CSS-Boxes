@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <input
+            type="search"
+            class="nav-search"
+            placeholder="Search..."
+        >
+
+        <div class="login-nav">
+
+            <div class="login-icon">
+                <!-- User Icon -->
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+                </svg>
+            </div>
+
+            <span>Login</span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Login Page -->
+    <main class="login-page">
+
+        <section class="login-container">
+
+            <h1>Login</h1>
+
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="input-group">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                        <path d="m3 7 9 6 9-6"></path>
+                    </svg>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-group">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="4" y="10" width="16" height="11" rx="2"></rect>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                    </svg>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    Login
+                </button>
+
+
+                <p id="errorMessage" class="error-message">
+                    Please enter a valid email and password.
+                </p>
+
+
+                <!-- Signup -->
+                <p class="signup-text">
+                    Don't have an account?
+                    <a href="/signup">Create account</a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
